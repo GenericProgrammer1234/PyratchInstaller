@@ -17,8 +17,8 @@ if t == 1:
 	os.system(f"cd / && git clone https://github.com/GenericProgrammer1234/Pyratch.git -b {branch}")
 elif t == 2:
 	os.system(f"cd ~ && git clone https://github.com/GenericProgrammer1234/Pyratch.git -b {branch}")
-print("Downloading dependicies")
-os.system("python -m pip install scratchattach flask")
+print("Downloading dependencies")
+os.system("pip3 install scratchattach flask --break-system-packages")
 print("Running Pyratch")
 print("Done! Now go to http://localhost:5000 to use Pyratch! In the future you'll need to go to " + ("~/Pyratch" if t == 2 else "/Pyratch") + " and run it!")
-os.system("cd " + ("~/Pyratch" if t == 2 else "/Pyratch") + " && python interface.py")
+os.system("cd " + ("~/Pyratch" if t == 2 else "/Pyratch") + " && python3 interface.py")
